@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Car Shop</title>
+  <link rel="stylesheet" type="text/css" href="bundle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <h1 style="color: blue">Car Shop</h1>
+  <button style="color: red" id="resetButton">Reset</button>
+
+  <h2 style="color: green">Get All Owners</h2>
+  <button id="getAllOwnersButton">Get all owners</button>
+
+  <div class="container" id="ownersContent"></div>
+
+  <h2>Get All</h2>
+  <button id="getAllButton">Get all cars</button>
+
+  <div id="content"></div>
+
+  <h2>Get By ID</h2>
+  <input id="getInput" placeholder="id" />
+  <button id="getByIdButton">Get By ID</button>
+
+  <div id="idContent"></div>
+
+  <h2>Search</h2>
+  <select id="selector">
+    <option value="vendor">Vendor</option>
+    <option value="model">Model</option>
+    <option value="price">Price</option>
+  </select>
+  <input id="getSearchInput" placeholder="Search" />
+  <button id="searchButton">Search</button>
+
+  <div id="searchContent"></div>
+
+  <h2>Price Range</h2>
+  <input id="lowPriceInput" placeholder="LowPrice" />
+  <span>~</span>
+  <input id="highPriceInput" placeholder="highPrice" />
+  <button id="searcByPricehButton">Search</button>
+
+  <div id="searchByPriceContent"></div>
+
+  <h2>Change car</h2>
+  <select id="putSelector">
+    <option>---select car---</option>
+  </select>
+  <input id="idInput" placeholder="id" />
+  <span>, </span>
+  <input id="vendorInput" placeholder="vendor" />
+  <span>, </span>
+  <input id="modelInput" placeholder="model" />
+  <span>, </span>
+  <input id="priceInput" placeholder="price" />
+  <button id="changeCarButton">Change Car</button>
+
+  <div id="putContent"></div>
+
+  <h2>Delete</h2>
+  <input id="deleteInput" placeholder="id" />
+  <button id="deleteButton">Delete</button>
+
+  <div id="contentDelete"></div>
+
+  <h2>Add</h2>
+  <input id="addModel" placeholder="model" />
+  <input id="addVendor" placeholder="vendor" />
+  <input id="addPrice" placeholder="price" type="number" />
+  <button id="addButton">Add</button>
+  <div id="contentAdd"></div>
+ 
+  <script src="bundle.js"></script>
+</body>
+</html>
